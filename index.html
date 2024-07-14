@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a fucking calculator</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="javascript/main.js"></script>
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="result" disabled>
+        <div class="calculator-keypad">
+            <div class="percent" onclick="appendToResult('%')"><p>%</p></div>
+            <div class="clear-all" onclick="clearEverything()"><p>CE</p></div> 
+            <div class="clear" onclick="clearResult()"><p>C</p></div>
+            <div class="backspace" onclick="deleteChar()"><p>◄</p></div>
+            <div class="fraction" onclick="fraction()"><p>1/X</p></div>
+            <div class="squared" onclick="squared()"><p>X²</p></div>
+            <div class="square-root"onclick="squareRoot()"><p>√x</p></div>
+            <div class="division" onclick="appendToResult('/')"><p>/</p></div>
+            <div class="7" onclick="appendToResult('7')"><p>7</p></div>
+            <div class="8" onclick="appendToResult('8')"><p>8</p></div>
+            <div class="9" onclick="appendToResult('9')"><p>9</p></div>
+            <div class="multiplication" onclick="appendToResult('*')"><p>X</p></div>
+            <div class="4" onclick="appendToResult('4')"><p>4</p></div>
+            <div class="5" onclick="appendToResult('5')"><p>5</p></div>
+            <div class="6" onclick="appendToResult('6')"><p>6</p></div>
+            <div class="subtraction" onclick="appendToResult('-')"><p>-</p></div>
+            <div class="1" onclick="appendToResult('1')"><p>1</p></div>
+            <div class="2" onclick="appendToResult('2')"><p>2</p></div>
+            <div class="3" onclick="appendToResult('3')"><p>3</p></div>
+            <div class="addition" onclick="appendToResult('+')"><p>+</p></div>
+            <div class="plus-minus" onclick="toggleSign()"><p>+/-</p></div>
+            <div class="0" onclick="appendToResult('0')"><p>0</p></div>
+            <div class="decimal" onclick="appendToResult('.')"><p>.</p></div>
+            <div class="equals" onclick="calculateResult()"><p>=</p></div>
+        </div>
+    </div>
+</body>
+</html>

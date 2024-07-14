@@ -1,0 +1,107 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Full viewport height */
+    margin: 0;
+    background-color: #f0f0f0; /* Optional: set a background color */
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 400px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000000;
+    padding: 2px;
+    margin: 0 auto;
+}
+
+.calculator-screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 325px;
+    height: 300px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000000;
+    margin-top: 30px;
+    margin-bottom: 0px;
+}
+
+.calculator-keypad{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 40px;
+    padding-bottom: 2px;
+}
+
+.calculator-keypad>div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    border: 1px solid #000000;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.calculator-keypad>div:hover{
+    background-color: #645656;
+    color: #f2f2f2;
+    transition: .1s ease-in-out;
+    cursor: pointer;
+}
+
+#dark-mode-toggle {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333; /* Dark background color */
+}
+
+.calculator.dark-mode {
+    background-color: #444; /* Dark calculator background */
+    color: #f2f2f2; /* Light text color */
+}
+
+.calculator-screen.dark-mode {
+    background-color: #666; /* Dark screen background */
+    color: #f2f2f2; /* Light text color */
+}
+
+.calculator-keypad > div.dark-mode {
+    background-color: #555; /* Dark button background */
+    border: 1px solid #ddd; /* Light border color */
+    color: #f2f2f2; /* Light text color */
+}
+
+.calculator-keypad > div.dark-mode:hover {
+    background-color: #777; /* Lighter button background on hover */
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0056b3;
+}
